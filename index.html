@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Enchanting Table Language Converter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="flex-container">
+            <h2>Minecraft Enchanting Table Text Converter</h2>
+            <div id="encoder-decoder-container">
+                <div id="encoder">
+                    <h4>Encode Text: </h4>
+                    <textarea placeholder="Put text here to encode..." id="encode-input"></textarea>
+                    <div id="encode-button-container">
+                        <button id="submit-encode" class="btn">Submit</button>
+                        <button id="copy-encode" class="btn">Copy</button>
+                        <p id="en-copy-confirm"></p>
+                    </div>
+                </div>
+                <p id="disclaimer-text">When you encode text, the result appears <br> in the decode text field and vice versa.</p>
+                <div id="decoder">
+                    <h4>Decode Text: </h4>
+                    <textarea placeholder="Put text here to decode..." id="decode-input"></textarea>
+                    <div id="decode-button-container">
+                        <button id="submit-decode" class="btn">Submit</button>
+                        <button id="copy-decode" class="btn">Copy</button>
+                        <p id="de-copy-confirm"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
