@@ -6,6 +6,11 @@ const encodeCopyBtn = document.getElementById("copy-encode")
 const enCopyConfirm = document.getElementById("en-copy-confirm")
 const decodeCopyBtn = document.getElementById("copy-decode")
 const deCopyConfirm = document.getElementById("de-copy-confirm")
+const clearButton = document.querySelectorAll(".clearBtn")
+function clearInputs() {
+  encodeInput.value = ""
+  decodeInput.value = ""
+}
 function encode() {
    let output = 
    encodeInput.value
@@ -92,3 +97,6 @@ submitEncode.onclick = encode
 submitDecode.onclick = decode
 encodeCopyBtn.onclick = encodeCopy
 decodeCopyBtn.onclick = decodeCopy
+clearButton.forEach(button => {
+  button.onclick = clearInputs;
+})
